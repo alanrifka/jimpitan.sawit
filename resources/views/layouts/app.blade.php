@@ -27,6 +27,7 @@
             <a href="{{ route('kas-masuks.index') }}" class="{{ request()->routeIs('kas-masuks.*') ? 'active' : '' }}">KAS MASUK</a>
             <a href="{{ route('pengeluarans.index') }}" class="{{ request()->routeIs('pengeluarans.*') ? 'active' : '' }}">KAS KELUAR</a>
             <a href="{{ route('users.index') }}" class="{{ request()->routeIs('users.*') ? 'active' : '' }}">PETUGAS</a>
+            <a href="{{ route('cctv.index') }}" class="{{ request()->routeIs('cctv.*') ? 'active' : '' }}" style="{{ request()->routeIs('cctv.*') ? '' : 'color: #f87171;' }}">📹 CCTV</a>
         </div>
         <div style="display: flex; align-items: center; gap: 1.5rem;">
             <div style="display: flex; align-items: center; gap: 0.75rem;">

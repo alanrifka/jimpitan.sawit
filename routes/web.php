@@ -8,6 +8,7 @@ use App\Http\Controllers\JimpitanController;
 use App\Http\Controllers\PengeluaranController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\KasMasukController;
+use App\Http\Controllers\CctvController;
 use Illuminate\Support\Facades\Route;
 
 // Public login routes
@@ -25,4 +26,5 @@ Route::middleware('auth')->group(function () {
     Route::resource('users', UserController::class);
     Route::resource('kas-masuks', KasMasukController::class);
     Route::get('wargas/{warga}/print-jimpitan', [JimpitanController::class, 'printCard'])->name('jimpitans.print');
+    Route::get('cctv', [CctvController::class, 'index'])->name('cctv.index');
 });
